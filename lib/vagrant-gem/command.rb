@@ -1,4 +1,12 @@
+require "rubygems"
+require "rubygems/gem_runner"
+
+require "vagrant/util/safe_puts"
+
 module VagrantGemPlugin
+	# this code is basically just coped from:
+	# https://github.com/mitchellh/vagrant/blob/v1.0.7/lib/vagrant/command/gem.rb
+
   class Command < Vagrant.plugin(2, :command)
     include Vagrant::Util::SafePuts
 
