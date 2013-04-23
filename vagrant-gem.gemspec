@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ego@anentropic.com"]
   spec.description   = %q{Vagrant plugin to allow you to install gems into the Vagrant gem environment}
   spec.summary       = %q{Vagrant plugin to allow you to install gems into the Vagrant gem environment}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/anentropic/vagrant-gem"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

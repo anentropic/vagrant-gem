@@ -6,4 +6,5 @@ module VagrantGemPlugin
       require_relative "vagrant-gem/command"
       Command
     end
+  end
 end
