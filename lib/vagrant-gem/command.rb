@@ -1,6 +1,6 @@
 module VagrantGemPlugin
   class Command < Vagrant.plugin(2, :command)
-    include Util::SafePuts
+    include Vagrant::Util::SafePuts
 
     def execute
       # Bundler sets up its own custom gem load paths such that our
@@ -9,7 +9,7 @@ module VagrantGemPlugin
       if defined?(Bundler)
         require 'bundler/shared_helpers'
         if Bundler::SharedHelpers.in_bundle?
-          raise Errors::GemCommandInBundler
+          raise Vagrant::Errors::GemCommandInBundler
         end
       end
 
