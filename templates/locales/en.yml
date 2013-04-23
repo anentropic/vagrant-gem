@@ -1,0 +1,8 @@
+en:
+  vagrant_gem_plugin:
+    help_preamble: |-
+      `vagrant gem` is used to install Vagrant plugins via the RubyGems
+      system. In fact, `vagrant gem` is just a frontend to the actual `gem`
+      interface, with the difference being that Vagrant sets up a custom
+      directory where gems are installed so that they are isolated from your
+      system gems.

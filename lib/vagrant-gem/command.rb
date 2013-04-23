@@ -16,8 +16,9 @@ module VagrantGemPlugin
       # If the user needs some help, we add our own little message at the
       # top so that they're aware of what `vagrant gem` is doing, really.
       if @argv.empty? || @argv.include?("-h") || @argv.include?("--help")
-      	# see https://github.com/mitchellh/vagrant/blob/v1.0.7/templates/locales/en.yml
-        @env.ui.info(I18n.t("vagrant.commands.gem.help_preamble"),
+      	# copy and pasted from:
+      	# https://github.com/mitchellh/vagrant/blob/v1.0.7/templates/locales/en.yml
+        @env.ui.info(I18n.t("vagrant_gem_plugin.help_preamble"),
                      :prefix => false)
         safe_puts
       end
